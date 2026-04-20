@@ -20,7 +20,7 @@ tags:
   - czech
 startCommand:
   type: http
-  url: https://PLACEHOLDER.up.railway.app/mcp
+  url: https://katastr-mcp-production.up.railway.app/mcp
   configSchema:
     type: object
     properties:
