@@ -1,0 +1,33 @@
+name: katastr-mcp
+displayName: Czech Land Registry (Katastr nemovitostí)
+description: |
+  Query the Czech Land Registry (Katastr nemovitostí) via the official ČÚZK API.
+  Look up parcels, buildings, ownership sheets, cadastral units, addresses, and active proceedings.
+  Perfect for real estate agents, notaries, banks (KYC), and property investors working with Czech real estate.
+version: 1.0.0
+license: MIT
+categories:
+  - real-estate
+  - czech-republic
+  - government-data
+tags:
+  - katastr
+  - nemovitosti
+  - ČÚZK
+  - parcely
+  - vlastnictví
+  - real-estate
+  - czech
+startCommand:
+  type: http
+  url: https://PLACEHOLDER.up.railway.app/mcp
+  configSchema:
+    type: object
+    properties:
+      apiKey:
+        type: string
+        title: API Key (Optional)
+        description: "Remove the 10 calls/day limit."
+    required: []
+  exampleConfig:
+    apiKey: "km_your_key_here"
